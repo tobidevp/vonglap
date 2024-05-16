@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var a = []
+    for (var i = 2; i <= 9; i++) {
+        var obj = []
+        for (var j = 1; j <= 9; j++) {
+            obj.push(i + "*" + j + "=" + i * j) 
+        }
+        a.push(obj)
+    }
+    document.write('<table border="1"')
+    a.map(obj => {
+        document.write('<tr>')
+        obj.map(item => {
+            document.write('<td>' + item + '</td>')
+        })
+        document.write('</tr>')
+    })
+    document.write('</table>')
+</script>
+</html>
