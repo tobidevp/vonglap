@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // bai 1
+    // let a = +prompt('Nhap so: ');
+    // let factorial = 1;
+    // for (let i = 1; i <= a; i++) {
+    //     factorial *= i
+    // }
+    // document.write(factorial)
+
+    // bai 2: ngoi sao tam giac vuong
+        // 2.1
+//     for (let i = 1; i <= 5; i++) {
+//         for (let j = 1; j <= i; j++) {
+//             document.write("*");
+//         }
+//         document.write("<br>");
+// }
+        // 2.2
+        // for (let i = 1; i <= 5; i++) {
+        //     for (let j = 1; j <= 5 - i; j++) {
+        //         document.write("&nbsp;&nbsp;");
+        //     }
+        //     for (let k = 1; k <= i; k++) {
+        //         document.write("*");
+        //     }
+        //     document.write("<br>");
+        // }
+
+
+        // 2.3
+        // for(let i = 5; i >0; i--) {
+        //     for(let j = i; j > 0; j--) {
+        //         document.write("*")
+        //     }
+        //     document.write("<br>")
+        // }
+
+        // 2.4
+        // for(let i = 5; i >=1; i--) {
+        //     for(let j = 1; j <= 5- i; j++) {
+        //         document.write("&nbsp;&nbsp;")
+        //     }
+        //     for(let k = 1; k <= i; k++) {
+        //         document.write("*")
+        //     }
+        //     document.write("<br>")
+        // }
+
+        // 2.5 hinh chu nhat
+        // for (let i = 1; i <= 30; i++) {
+        //     document.write("*")
+        // }
+        // document.write("<br>")
+        // for (let i = 0; i < 6; i++) {
+        //     document.write("*")
+        //     for (let j = 1; j < 29; j++) {
+        //         document.write("&nbsp;&nbsp;")
+        //     }
+        //     document.write("*<br>")
+        // }
+        // for (let i = 1; i <= 30; i++) {
+        //     document.write("*")
+        // }
+        
+
+        // 2.6 lai kep
+        let tienGoc = +prompt('Nhap so tien ban muon gui: ')
+        let laiSuat = +prompt('Nhap lai suat: ')
+        let thoiGian = +prompt('Nhap thoi gian: ')
+
+        let tongTien = tienGoc * Math.pow((1 + laiSuat), thoiGian)
+        alert(tongTien)
+
+
+
+        
+
+</script>
+</html>
