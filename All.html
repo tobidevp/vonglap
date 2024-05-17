@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Start</button>
+</body>
+<script>
+    // bai 1
+    // for (var i = 1; i <= 100; i++) {
+    //     if (i < 100) {
+    //     document.write(i + "<br>");
+    // } else {
+    //     alert("Đã hoàn thành!");
+    //     break;
+    // }
+    // }
+
+    // bai 2
+    // var a = +prompt('Nhap so nhiet do:');
+    // if (a > 100) {
+    //     alert('Giam nhiet do');
+    // } else if (a >= 20) {
+    //     alert('Ok nhiet');
+    // } else {
+    //     alert('Tang nhiet do');
+    // }
+
+    // bai 3
+    // let n = 20
+    // let fib = [1,1]
+    // for (let i = 2; i < n; i++) {
+    // fib[i] = fib[i - 1] + fib[i - 2];
+    // }
+
+    // for (let i = 0; i < n; i++) {
+    //     document.write(fib[i] + "<br>");
+    // }
+
+    // bai4
+    // let n = +prompt('Nhap so:');
+    // let fib = [1,1]
+    // for (let i = 2; i < n; i++) {
+    //     fib[i] = fib[i - 1] + fib[i - 2];
+    // }
+
+    // for (let i = 0; i < n; i++) {
+    //     if (fib[i] % 5 === 0) {
+    //         alert(fib[i]);
+    //         break
+    //     }
+        
+    // }
+
+    // bai 5
+    // let n = 20
+    // let fib = [1,1]
+    // let a = 2
+
+    // for ( let i = 2; i< n; i++) {
+    //     fib[i] = fib[i - 1] + fib[i - 2];
+    //     a += fib[i]
+    // }
+    // document.write("<br>Tổng của các số trong dãy Fibonacci là: " + a);
+
+    // bai 6
+    // let count = 0;
+    // let sum = 0
+    // for (let i = 0; count < 30; i++) {
+    //     if (i % 7 === 0) {
+    //         sum += i
+    //         count++
+    //     }
+    // }
+    // document.write(sum)
+
+    // bai 7
+    // for (let i = 0; i <= 100; i++) {
+    //     if (i % 3 === 0 && i % 5 === 0) {
+    //         document.write("FizzBuzz<br>")
+    //     } else if (i % 3 === 0) {
+    //         document.write("Fizz<br>")
+    //     } else if (i % 5 === 0) {
+    //         document.write("Buzz<br>")
+    //     } else {
+    //         document.write(i + "<br>")
+    //     }
+    // }
+
+    // bai 8
+    document.getElementById("btn").onclick = () => {
+    let maxRange = +prompt('Số bạn muốn đoán trong khoảng lớn nhất là bao nhiêu?');
+    let targetNumber = Math.floor(Math.random() * maxRange) + 1;
+    
+    while (true) {
+        let guessedNumber = +prompt('Nhập vào số của bạn:');
+        
+        if (guessedNumber === targetNumber) {
+            alert('Chúc mừng bạn đã đoán đúng!');
+            break;
+        } else {
+            alert('Sai rồi, đoán lại đi!');
+        }
+    }
+};
+</script>
+</html>
